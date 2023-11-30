@@ -22,7 +22,7 @@ body {
 .navbar {
   display: flex;
   justify-content: space-between;
-  padding-top: 32px;
+  padding-top: 40px;
   padding-bottom: 16px;
 }
 
@@ -148,7 +148,7 @@ span {
   display: flex;
   justify-content: space-between;
   margin-bottom: -50px;
-  margin-top: 120px;
+  margin-top: 150px;
 
 }
 
@@ -160,6 +160,7 @@ span {
 .mainText h2 {
   font-size: 1.5rem;
   font-weight: 400;
+  padding-top: 10px;
 }
 
 .mainText p,
@@ -334,4 +335,8 @@ h1 {
   padding-right: 50px;
 }
 
+.footer-content a {
+  text-decoration: none;
+  color:blue;
+}
 
