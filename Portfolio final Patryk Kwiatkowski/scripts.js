@@ -77,14 +77,12 @@ _INTERVAL_VAL = setInterval(Type, 100);
 
 // Reveal library
 
-ScrollReveal().reveal('.about-box', { origin: 'right', distance: '400px', duration: 1000, easing: 'ease-in', reset: true });
-ScrollReveal().reveal('.about2', { origin: 'left', distance: '400px', duration: 1000, easing: 'ease-in', reset: true });
-ScrollReveal().reveal('.mainText', { origin: 'left', distance: '400px', duration: 1000, easing: 'ease-in', reset: true });
-ScrollReveal().reveal('.resume', { origin: 'bottom', distance: '200px', duration: 1000, easing: 'ease-in', reset: true });
+ScrollReveal().reveal('.right-slide', { origin: 'right', distance: '400px', duration: 1000, easing: 'ease-in', reset: true });
+ScrollReveal().reveal('.left-slide', { origin: 'left', distance: '400px', duration: 1000, easing: 'ease-in', reset: true });
+ScrollReveal().reveal('.bottom-slide', { origin: 'bottom', distance: '200px', duration: 1000, easing: 'ease-in', reset: true });
 ScrollReveal().reveal('#picture', { duration: 2000, easing: 'ease-in', reset: true });
-ScrollReveal().reveal('.leftImage', { origin: 'bottom', distance: '100px', duration: 1000, easing: 'ease-in', reset: true });
-ScrollReveal().reveal('.linked-in', { origin: 'right', distance: '100px', duration: 1000, easing: 'ease-in', reset: true });
-ScrollReveal().reveal('#social-picture', { origin: 'bottom', distance: '200px', duration: 1000, easing: 'ease-in', reset: true });
+ScrollReveal().reveal('.social', { origin: 'right', distance: '150px', duration: 1000, easing: 'ease-in', reset: true });
+
 
 
 // Arrow function
@@ -103,7 +101,7 @@ document.addEventListener("DOMContentLoaded", function () {
 	// Smooth scroll to the top when the arrow is clicked
 	scrollArrow.addEventListener("click", function () {
 		window.scrollTo({
-			top: 800,
+			top: 915,
 			behavior: "smooth"
 		});
 	});
@@ -114,3 +112,20 @@ document.addEventListener("DOMContentLoaded", function () {
 	// Initial check for scroll position
 	toggleArrow();
 });
+
+//Mobile nav bar
+
+const hamburger = document.querySelector(".hamburger");
+const bar1 = document.querySelector(".bar1");
+const bar2 = document.querySelector(".bar2");
+const bar3 = document.querySelector(".bar3");
+const mobileNav = document.querySelector(".mobile-nav");
+
+hamburger.addEventListener("click", () => {
+   bar1.classList.toggle("animateBar1");
+   bar2.classList.toggle("animateBar2");
+   bar3.classList.toggle("animateBar3");
+   mobileNav.classList.toggle("open-drawer");
+});
+
+
