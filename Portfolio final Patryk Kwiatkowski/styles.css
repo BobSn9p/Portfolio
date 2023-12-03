@@ -319,6 +319,12 @@ h1 {
 /* About end */
 
 /* Footer start */
+#footer {
+  position: absolute;
+  width: 100%;
+  bottom:0;
+}
+
 .footer-content {
   background-color: #1e1f2e;
   height: 80px;

@@ -1,14 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/scrollreveal"></script>
     <link rel="stylesheet" href="styles.css">
-    <title>Document</title>
+    <title>QA Patryk Kwiatkowski</title>
 </head>
+
 <body>
     <div class="container">
         <header class="navbar">
@@ -17,45 +20,48 @@
                 <div class="navElement bug1">
                     <a href="index.html" class="button"><span>About me</span></a>
                     <img src="pictures/bugUP.png" alt="Hover Image" class="bugRight">
-                   </div>
-   
-                   <div class="navElement bug2">
-                    <a href="#skills" class="active button"><span>Skills</span></a>
+                </div>
+
+                <div class="navElement bug2">
+                    <a href="skills.html" class="active button"><span>Skills</span></a>
                     <img src="pictures/bugDOWN.png" alt="Hover Image" class="bugLeft">
-                   </div>
-   
-                   <div class="navElement bug3">
+                </div>
+
+                <div class="navElement bug3">
                     <a href="#experience" class="button"><span>Experience</span></a>
                     <img src="pictures/bugUP.png" alt="Hover Image" class="bugLeft">
-                   </div>
-   
-                   <div class="navElement bug4">
-                   <a href="#contact" class="button"><span>Contact</span></a>
-                   <img src="pictures/bugDOWN.png" alt="Hover Image" class="bugLeft">
-                   </div>
-            </nav>
-        </header>
-
-        <div class="content">
-            <div class="mainText">
-            <p id="role">Quality Assurance / Software Tester </p>
-            <h1>Hello, my name is <br>Patryk Kwiatkowski</h1>
-            <p>I am a QA with <span>3</span> years of commercial experience.
-                Searching for bugs and improving quality of websites is my daily routine which i love.
-                Apart from testing, I am eager to expand my IT knowledge in frontend, backend and test automation.
-                This allows me to take a broader look at the application and provides a deeper understanding of 
-                the problems that may occur. </p>
-                <div class="animatedText">
-                    <div id="text"></div>
-                    <div id="cursor"></div>
                 </div>
-            </div>
 
-            <div id="picture">
-            <img src="pictures/PortraitMain.png" alt="Portrait">
+                <div class="navElement bug4">
+                    <a href="#contact" class="button"><span>Contact</span></a>
+                    <img src="pictures/bugDOWN.png" alt="Hover Image" class="bugLeft">
+                </div>
+            </nav>
+            <div class="hamburger">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
             </div>
+        </header>
+        <nav class="mobile-nav">
+            <a href="index.html">About me</a>
+            <a href="skills.html" class="mobile-active">Skills</a>
+            <a href="index.html">Experience</a>
+            <a href="index.html">Contact</a>
+        </nav>
+
+
+    </div>
+
+    <footer id="footer">
+        <div class="footer-content">
+            <p>Website created by Patryk Kwiatkowski | <a
+                    href="https://www.freepik.com/free-vector/software-code-testing-concept-illustration_21864174.htm#query=software%20testing&position=3&from_view=search&track=ais&uuid=c379d65c-a610-4f71-8eab-22036c1a8913"
+                    target="_blank">Image
+                    by storyset</a> on Freepik </p>
         </div>
-
-        <script src="scripts.js"></script>
+    </footer>
+    <script src="scripts.js"></script>
 </body>
+
 </html>
