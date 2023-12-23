@@ -28,7 +28,7 @@ body {
 }
 
 .navbar .left {
-  font-size: 32px;
+  font-size: 24px;
   font-weight: bold;
   letter-spacing: 2px;
 }
@@ -201,12 +201,11 @@ span {
 }
 
 .mainText {
-  font-size: 1.5rem;
+  font-size: 1rem;
   width: 60%;
 }
 
 .mainText h2 {
-  font-size: 1.5rem;
   font-weight: 400;
   padding-top: 10px;
 }
@@ -220,6 +219,7 @@ h1 {
 #role {
   font-size: 24px;
   color: var(--primary-color);
+  padding:0 0 5px 0;
 }
 
 #picture {
@@ -295,6 +295,9 @@ h1 {
   font-size: 24px;
   padding-bottom: 170px;
   padding-top: 60px;
+}
+.resume p {
+  padding: 0;
 }
 
 .resume img {
@@ -549,14 +552,16 @@ h1 {
   margin-bottom: 80px;
   font-size: 20px;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: 1fr 2fr;
+  grid-template-columns: 2fr 2fr 1fr;
+  grid-template-rows: 1fr 1fr 2fr 1fr;
   grid-template-areas: 
   "hs ss c"
   "hs ss l"
+  "hs ss l"
+  "hs ss l"
   ". . .";
   margin-top: 100px;
-  column-gap:8rem;
+  column-gap:5rem;
 }
 
 
@@ -577,6 +582,9 @@ h1 {
   grid-area: l;
   display: flex;
   justify-content: flex-start;
+}
+.languages-content h3, .certificates h3 {
+  border-bottom: solid 3px var(--primary-color);
 }
 
 .certificates {
@@ -600,10 +608,12 @@ h1 {
   padding: 5px;
 }
 .s-content h3{
- text-shadow: 0 0 3px white;
+ text-shadow: 0 0 2px white;
+ font-size: 20px;
 }
 .s-content p {
   font-size: 1rem;
+  font-size: 15px;
 }
 
 .skills-box .skills-content {
