@@ -391,6 +391,14 @@ h1 {
   color:blue;
 }
 
+footer {
+position: fixed;
+bottom: 0;
+left: 0;
+width: 100%;
+}
+
+
 /* Mobile navbar start */
 .animateBar1 {
   animation: flipBar1 1s;
