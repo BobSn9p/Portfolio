@@ -651,5 +651,18 @@ width: 100%;
   border-radius: 50%;
 }
 
-
-
+.grid-container-test {
+  margin-bottom: 80px;
+  font-size: 20px;
+  display: grid;
+  grid-template-columns: 2fr 2fr 1fr;
+  grid-template-rows: 1fr 1fr 2fr 1fr;
+  grid-template-areas:
+  "hs hs ."
+  "hs hs ."
+  "hs hs ."
+  "hs hs ."
+  ". . .";
+  margin-top: 100px;
+  column-gap:5rem;
+}
